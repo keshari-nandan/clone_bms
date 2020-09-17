@@ -9,8 +9,6 @@ class CreateCityTable(Migration):
         """
         with self.schema.create('cities') as table:
             table.increments('id')
-            table.integer('state_id').unsigned()
-            table.foreign('state_id').references('id').on('states')
             table.string('name')
             table.timestamps()
 
