@@ -2,7 +2,7 @@
 
 from masonite.testing import TestCase
 
-from app.User import User
+from app.Models.User import User
 from config.factories import factory
 
 

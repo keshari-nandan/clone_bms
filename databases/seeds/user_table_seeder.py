@@ -9,7 +9,7 @@ You can run this seeder in order to generate users.
 
 from orator.seeds import Seeder
 
-from app.User import User
+from app.Models.User import User
 from config.factories import factory
 
 
