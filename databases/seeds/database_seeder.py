@@ -13,4 +13,4 @@ class DatabaseSeeder(Seeder):
         """Run the database seeds."""
         self.call(CityTableSeeder)
         self.call(MovieTableSeeder)
-        # self.call(TheaterTableSeeder)
+        self.call(TheaterTableSeeder)

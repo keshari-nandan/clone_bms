@@ -5,22 +5,24 @@ from app.models.City import City
 from app.models.Screen import Screen
 import random
 
-cities = City.all().pluck('id')
 ran_range = [1, 2, 3]
+rand_seats = [60, 57, 120, 200, 83]
 
 
 @factory.define(Theater)
 def theaters_factory(faker):
+    cities = City.all().pluck('id')
     return {
         'name': faker.name(),
         'city_id': random.choice(cities),
     }
 
-@factory.define(Theater)
+
+@factory.define(Screen)
 def screens_factory(faker):
     return {
         'name': faker.name(),
-        'city_id': random.choice(cities),
+        'seats': random.choice(rand_seats),
     }
 
 
@@ -32,7 +34,7 @@ class TheaterTableSeeder(Seeder):
         """
         theaters = factory(Theater, 10).create()
         for theater in theaters:
-            screens = random.choice(ran_range)
-            while screens > 0:
+            screen_count = random.choice(ran_range)
+            while screen_count > 0:
                 theater.screens().save(factory(Screen).make())
-                screens -= 1
+                screen_count -= 1
