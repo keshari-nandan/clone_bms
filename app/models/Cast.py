@@ -7,5 +7,3 @@ class Cast(Model):
     """Cast Model."""
 
     __table__ = 'casts'
-
-    pass

@@ -7,7 +7,7 @@ class CreateMovieTable(Migration):
         """
         Run the migrations.
         """
-        with self.schema.create('Movies') as table:
+        with self.schema.create('movies') as table:
             table.increments('id')
             table.string('name')
             table.text('description')
@@ -17,4 +17,4 @@ class CreateMovieTable(Migration):
         """
         Revert the migrations.
         """
-        self.schema.drop('Movies')
+        self.schema.drop('movies')
