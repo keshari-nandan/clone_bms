@@ -12,7 +12,7 @@ class CreateMovieTable(Migration):
             table.string('name')
             table.text('description')
             table.integer('play_time')  # In Minutes
-            table.date('release_date')
+            table.datetime('release_date')
             table.timestamps()
 
     def down(self):

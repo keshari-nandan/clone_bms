@@ -12,3 +12,4 @@ class Theater(Model):
     @has_many('theater_id', 'id')
     def screens(self):
         return Screen
+

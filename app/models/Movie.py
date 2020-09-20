@@ -1,5 +1,5 @@
 """Movie Model."""
-from orator.orm import has_many
+from orator.orm import has_many, belongs_to_many
 
 from config.database import Model
 from .Crew import Crew
@@ -10,7 +10,10 @@ from .Language import Language
 
 class Movie(Model):
     """Movie Model."""
+
     __table__ = 'movies'
+
+    __dates__ = ['release_date']
 
     @has_many('movie_id', 'id')
     def casts(self):
@@ -27,3 +30,4 @@ class Movie(Model):
     @has_many('movie_id', 'id')
     def languages(self):
         return Language
+
