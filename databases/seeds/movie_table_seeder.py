@@ -30,6 +30,13 @@ def crews_factory(faker):
         'role': 'Writer'
     }
 
+@factory.define(Crew)
+def crews_factory(faker):
+    return {
+        'name': faker.name(),
+        'role': 'Writer'
+    }
+
 
 class MovieTableSeeder(Seeder):
 
