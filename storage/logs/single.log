@@ -6,3 +6,8 @@
 2020-09-20 15:53:48 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
 2020-09-20 15:54:28 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
 2020-09-20 15:57:38 - ERROR - ModelNotFound in /Users/ats/Desktop/Masonite/bms/app/resources/CityWiseMovieResource.py on line 14
+2020-09-20 16:59:09 - ERROR - QueryException in /Users/ats/Desktop/Masonite/bms/app/resources/CityWiseMovieResource.py on line 16
+2020-09-20 17:01:41 - ERROR - QueryException in /Users/ats/Desktop/Masonite/bms/app/resources/CityWiseMovieResource.py on line 16
+2020-09-20 17:02:04 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-20 17:02:08 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-20 17:03:38 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38

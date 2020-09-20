@@ -78,7 +78,7 @@ class MovieTableSeeder(Seeder):
                 movie.genres().save(factory(Genre).make())
                 no_of_genres -= 1
 
-            no_of_languages = random.choice(ran_range)
+            no_of_languages = random.choice([1, 2])
             while no_of_languages > 0:
                 movie.languages().save(factory(Language).make())
                 no_of_languages -= 1

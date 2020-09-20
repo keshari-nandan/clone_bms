@@ -6,6 +6,7 @@ from .Crew import Crew
 from .Cast import Cast
 from .Genre import Genre
 from .Language import Language
+from .MovieShow import MovieShow
 
 
 class Movie(Model):
@@ -30,4 +31,8 @@ class Movie(Model):
     @has_many('movie_id', 'id')
     def languages(self):
         return Language
+
+    @has_many('movie_id', 'id')
+    def shows(self):
+        return MovieShow
 
