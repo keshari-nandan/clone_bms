@@ -11,3 +11,9 @@
 2020-09-20 17:02:04 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
 2020-09-20 17:02:08 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
 2020-09-20 17:03:38 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-20 17:50:58 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/app/resources/BaseResourse.py on line 33
+2020-09-20 17:55:04 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/app/resources/BaseResourse.py on line 33
+2020-09-20 17:56:57 - ERROR - AttributeError in /Users/ats/Desktop/Masonite/bms/app/resources/MovieWiseTheaterResource.py on line 16
+2020-09-20 17:57:13 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-20 17:57:17 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-20 17:57:32 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
