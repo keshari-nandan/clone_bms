@@ -12,6 +12,7 @@ class DatabaseSeeder(Seeder):
 
     def run(self):
         """Run the database seeds."""
+        self.call(UserTableSeeder)
         self.call(CityTableSeeder)
         self.call(MovieTableSeeder)
         self.call(TheaterTableSeeder)

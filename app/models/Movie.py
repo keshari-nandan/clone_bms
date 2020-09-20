@@ -14,7 +14,7 @@ class Movie(Model):
 
     __table__ = 'movies'
 
-    __dates__ = ['release_date']
+    __casts__ = {'release_date': 'string'}
 
     @has_many('movie_id', 'id')
     def casts(self):

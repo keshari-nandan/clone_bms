@@ -62,23 +62,23 @@ class MovieTableSeeder(Seeder):
         Run the database seeds.
         """
         movies = factory(Movie, 10).create()
-        for movie in movies:
-            no_of_casts = random.choice(ran_range)
-            while no_of_casts > 0:
-                movie.casts().save(factory(Cast).make())
-                no_of_casts -= 1
-
-            no_of_crews = random.choice(ran_range)
-            while no_of_crews > 0:
-                movie.crews().save(factory(Crew).make())
-                no_of_crews -= 1
-
-            no_of_genres = random.choice(ran_range)
-            while no_of_genres > 0:
-                movie.genres().save(factory(Genre).make())
-                no_of_genres -= 1
-
-            no_of_languages = random.choice([1, 2])
-            while no_of_languages > 0:
-                movie.languages().save(factory(Language).make())
-                no_of_languages -= 1
+        # for movie in movies:
+        #     no_of_casts = random.choice(ran_range)
+        #     while no_of_casts > 0:
+        #         movie.casts().save(factory(Cast).make())
+        #         no_of_casts -= 1
+        #
+        #     no_of_crews = random.choice(ran_range)
+        #     while no_of_crews > 0:
+        #         movie.crews().save(factory(Crew).make())
+        #         no_of_crews -= 1
+        #
+        #     no_of_genres = random.choice(ran_range)
+        #     while no_of_genres > 0:
+        #         movie.genres().save(factory(Genre).make())
+        #         no_of_genres -= 1
+        #
+        #     no_of_languages = random.choice([1, 2])
+        #     while no_of_languages > 0:
+        #         movie.languages().save(factory(Language).make())
+        #         no_of_languages -= 1
