@@ -20,3 +20,5 @@
 2020-09-20 18:11:58 - ERROR - ValueError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
 2020-09-20 18:29:56 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
 2020-09-20 18:30:26 - ERROR - ContainerError in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-21 04:47:16 - ERROR - InvalidCSRFToken in /Users/ats/Desktop/Masonite/bms/bootstrap/start.py on line 38
+2020-09-21 05:03:17 - ERROR - ArgumentError in /Users/ats/Desktop/Masonite/bms/app/resources/LoginResource.py on line 17
