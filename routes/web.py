@@ -6,7 +6,7 @@ from app.resources.MovieWiseTheaterResource import MovieWiseTheaterResource
 from app.resources.ShowSeatAvailabilityResource import ShowSeatAvailabilityResource
 from app.resources.UserResource import UserResource
 from masonite.api.routes import JWTRoutes
-
+from app.resources.UserBookingResource import UserBookingResource
 
 ROUTES = [
     Get('/', 'WelcomeController@show').name('welcome'),
@@ -17,4 +17,7 @@ ROUTES = [
     ShowSeatAvailabilityResource('/api/show/@id').routes(),
     UserResource('/api/users').routes(),
     JWTRoutes('/api/login'),
+
+    # Authentication required api
+    UserBookingResource('/api/show/@show/book').middleware('guard:api').routes(),
 ]

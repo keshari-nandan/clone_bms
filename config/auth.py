@@ -18,16 +18,16 @@ be authenticated.
 
 AUTH = {
     'defaults': {
-        'guard': env('AUTH_GUARD', 'web')
+        'guard': env('AUTH_GUARD', 'api')
     },
     'guards': {
         'web': {
             'driver': 'cookie',
             'model': User,
-            'drivers': { # 'cookie', 'jwt'
+            'drivers': {  # 'cookie', 'jwt'
                 'jwt': {
                     'reauthentication': True,
-                    'lifetime': '5 minutes'
+                    'lifetime': '30 minutes'
                 }
             }
         },
@@ -45,6 +45,6 @@ DRIVERS = {
         'reauthentication': True,
 
         """How long the token should live for before being refreshed."""
-        'lifetime': '5 minutes'
+        'lifetime': '30 minutes'
     }
 }
